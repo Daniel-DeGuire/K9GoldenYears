@@ -36,26 +36,26 @@ The audience is students at Savvy-Coders, Hiring Managers, Dog Lovers, and Folks
 2. Three HTML files
     a. index.html
       1. Navigation - will be Standard Horizontal for desktop and Hamburger for mobile.
-      2. Main content - Will provide a brief a background on the website.
+      2. Main content - Will provide a brief a background on the website. Beneath the summary, will the Dog Finder API will be placed.
       3. Footer - will have contact information and additional resources.
-    b. downloads.html
+    b. why.html
       1. Navigation - same as index.html
-      2. Main content - will have a 
-    c. guides.html
-
-
+      2. Main content - Will include reasons to adopt a senior pet. 
+    c. local.html
+      1. Navigation - same as index.html and why.html
+      2. Main content - Wil include external links for local rescues. (if time, include a Yelp API for reviews)
 
 ## Site navigation
 ***
-Five hyperlinks at the top and bottom of the page: Index, About, Client, Services, and Contact.
+Five bottons at the top and bottom of the page: Index, About, Client, Services, and Contact. When loading on a mobile browser, buttons will be placed in a hambur
 
 ## Wireframes
 ***
-[ABOUT](INDEX.PNG)
+[INDEX](INDEX.PNG)
 
-[DOWNLOADS](WHY.PNG)
+[WHY](WHY.PNG)
 
-[GUIDES](RESCUES.PNG)
+[LOCAL](LOCALRESCUES.PNG)
 
 ## Thirdparty APIs
 ****
