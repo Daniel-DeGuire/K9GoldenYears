@@ -47,7 +47,7 @@ The audience is students at Savvy-Coders, Hiring Managers, Dog Lovers, and Folks
 
 ## Site navigation
 ***
-Five bottons at the top and bottom of the page: Index, About, Client, Services, and Contact. When loading on a mobile browser, buttons will be placed in a hambur
+Five bottons at the top and bottom of the page: Index, About, Client, Services, and Contact. Website will be mobile responsive and will put the buttons into a hamburger bar.
 
 ## Wireframes
 ***
