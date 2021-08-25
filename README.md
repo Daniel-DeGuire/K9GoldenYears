@@ -13,7 +13,7 @@
 
 ### General Info
 ***
-A website designed by Daniel DeGuire for the Savvy-Coders Capstone class. For the Capstone class, Daniel DeGuire will develop a website to provide users with tools to search for and display senior dogs (dogs over 10) in the Fenton, MO and surrounding communities (within 30 miles). In addition, we will provide links to nearby rescues with senior dogs and reasons to adopt a senior pet. 
+A website designed by Daniel DeGuire for the Savvy-Coders Capstone class. For the Capstone class, Daniel DeGuire will develop a website to provide users with tools to search for and display senior dogs (dogs over 10) in the Fenton, MO and surrounding communities (within 30 miles). In addition, the website will provide links to nearby rescues with senior dogs and reasons to adopt a senior pet. 
 
 Senior dogs quite often are left at shelters much longer than younger dogs. And one the the website's main goals, is to eventually become a hub to help senior pets become adopted more quickly.
 
