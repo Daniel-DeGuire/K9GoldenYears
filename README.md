@@ -1,29 +1,80 @@
-# Savvy Coders Project Boilerplate Starter Kit
+## Table of Contents
+1. [General Info](#general-info)
+2. [Audience](#audience)
+3. [User Flow](#user-flow)
+4. [Built With](#built-with)
+5. [Outline of Content](#outline-of-content)
+6. [Site Navigation](#site-navigation)
+7. [Wireframes](#wireframes)
+8. [Third Party APIs](#third-party-APIs)
+9. [Color Pallete](#color-pallete)
+10. [FAQs](#faqs)
+11. [Support](#support)
 
-## Overview
+### General Info
+***
+A website designed by Daniel DeGuire for the Savvy-Coders Capstone class. For the Capstone class, Daniel DeGuire will develop a website to provide free & open source Microsoft Macros specifically taylored to the Logistics and supply chain industry. In addition to the free macros, installation & user guides are provided. The website will be branded under the name LogWorks Tools. 
 
-This template repository contains several opinionated, 'starter' files and settings to help Savvy Coder students focus more time and energy on learning how to code and/or craft 'business logic' for projects and less time on configurations.
+## Audience
+***
+The audience is students at Savvy-Coders and professionals in the Logistics & Supply Chain Industry interested in using open source tools to help streamline their job.
 
-In addition to a '.gitignore' and some VS Code specific extensions and settings, it includes the 'recommended' settings for:
+## User Flow
+***
 
-1. [ESLint](eslint.org)
-2. [Stylelint](stylelint.io)
-3. [Prettier](prettier.io)
 
-## Get Started
+## Built With
+***
+1. HTML
+2. CSS
+3. Javascript
 
-**First and foremost,** make sure that your local machine is set up with all of the 'dev environment tooling' as per the instructions in the curriculum.
+## Outline of Contents
+***
+2. Three HTML files
+    a. index.html
+      1. Navigation - will be Standard Horizontal for desktop and Hamburger for mobile.
+      2. Main content - Will provide a brief a background on the website.
+      3. Footer - will have contact information and additional resources.
+    b. downloads.html
+      1. Navigation - same as index.html
+      2. Main content - will have a 
+    c. guides.html
 
-Well, after establishing your directory structure on your local machine, (e.g. '~/Code/SavvyCoders'), clone the Savvy Starter Repo - essentially, there should be a button that says **Use this template.**
 
-> [Read more about using templates on GitHub here...](https://help.github.com/en/github/creating-cloning-and-archiving-repositories/creating-a-repository-from-a-template)
 
-Once this repo has been created on your GitHub, you can click on the button to 'clone' it as usual.
+## Site navigation
+***
+Five hyperlinks at the top and bottom of the page: Index, About, Client, Services, and Contact.
 
-Once it's `clone`d to your local machine, `cd` into the directory and **be sure to do:** `npm i` to get all of the dependencies installed. If you see any _errors_ (warnings are OK) on Windows, you may have to do `npm install`.
+## Wireframes
+***
+[ABOUT](INDEX.PNG)
+[DOWNLOADS](DOWNLOADS.PNG)
+[GUIDES](GUIDES.PNG)
 
-Now, enter `code .` to open this project in VS Code, and look for a prompt to 'install some extensions' once inside VS Code (in the bottom `right` of your screen). You should install these.
+## Thirdparty APIs
+****
+1. Inspriational Quote of the Day
 
-In your repo, feel free to update this README and make any other initial changes to files, etc. Then go ahead and do your usual `git` steps -- add, commit, and push.
+## Color Pallets
+***
+#8D8741
+#659DBD
+#DAAD86
+#BC986A
+#FBEEC1
 
-**Note:** This is a template repository, no need to 'fork it.
+# FAQs
+***
+No frequently asked questions yet.
+
+## Support
+***
+danjdeguire@gmail.com  
+
+
+| Headline 1 in the tablehead | Headline 2 in the tablehead | Headline 3 in the tablehead |
+|:--------------|:-------------:|--------------:|
+| text-align left | text-align center | text-align right |
+
