@@ -51,9 +51,9 @@ Five bottons at the top and bottom of the page: Index, About, Client, Services, 
 
 ## Wireframes
 ***
-INDEX.HTML [INDEX](INDEX.PNG)
-WHY.HTML [WHY](WHY.PNG)
-LOCAL.HTML [LOCAL](LOCALRESCUES.PNG)
+1. INDEX.HTML [INDEX](INDEX.PNG)
+2. WHY.HTML [WHY](WHY.PNG)
+3. LOCAL.HTML [LOCAL](LOCALRESCUES.PNG)
 
 ## Thirdparty APIs
 ****
