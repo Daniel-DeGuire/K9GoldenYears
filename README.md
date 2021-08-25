@@ -50,7 +50,9 @@ Five hyperlinks at the top and bottom of the page: Index, About, Client, Service
 ## Wireframes
 ***
 [ABOUT](INDEX.PNG)
+
 [DOWNLOADS](DOWNLOADS.PNG)
+
 [GUIDES](GUIDES.PNG)
 
 ## Thirdparty APIs
