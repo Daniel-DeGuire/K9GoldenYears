@@ -13,11 +13,13 @@
 
 ### General Info
 ***
-A website designed by Daniel DeGuire for the Savvy-Coders Capstone class. For the Capstone class, Daniel DeGuire will develop a website to provide free & open source Microsoft Macros specifically taylored to the Logistics and supply chain industry. In addition to the free macros, installation & user guides are provided. The website will be branded under the name LogWorks Tools. 
+A website designed by Daniel DeGuire for the Savvy-Coders Capstone class. For the Capstone class, Daniel DeGuire will develop a website to provide users with tools to search for and display senior dogs (dogs over 10) in the Fenton, MO and surrounding communities (within 30 miles). In addition, we will provide links to nearby rescues with senior dogs and reasons to adopt a senior pet. 
+
+Senior dogs quite often are left at shelters much longer than younger dogs. And one the the website's main goals, is to eventually become a hub to help senior pets become adopted more quickly.
 
 ## Audience
 ***
-The audience is students at Savvy-Coders and professionals in the Logistics & Supply Chain Industry interested in using open source tools to help streamline their job.
+The audience is students at Savvy-Coders, Hiring Managers, Dog Lovers, and Folks considering adopting a dog.
 
 ## User Flow
 ***
@@ -51,13 +53,13 @@ Five hyperlinks at the top and bottom of the page: Index, About, Client, Service
 ***
 [ABOUT](INDEX.PNG)
 
-[DOWNLOADS](DOWNLOADS.PNG)
+[DOWNLOADS](WHY.PNG)
 
-[GUIDES](GUIDES.PNG)
+[GUIDES](RESCUES.PNG)
 
 ## Thirdparty APIs
 ****
-1. Inspriational Quote of the Day
+1. Pet Finder API
 
 ## Color Pallets
 ***
@@ -74,9 +76,4 @@ No frequently asked questions yet.
 ## Support
 ***
 danjdeguire@gmail.com  
-
-
-| Headline 1 in the tablehead | Headline 2 in the tablehead | Headline 3 in the tablehead |
-|:--------------|:-------------:|--------------:|
-| text-align left | text-align center | text-align right |
 
