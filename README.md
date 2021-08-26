@@ -53,7 +53,7 @@ Five bottons at the top and bottom of the page: Index, About, Client, Services, 
 ***
 1. INDEX.HTML - [LINK](Wireframes/INDEX-WIREFRAME.PDF)
 2. WHY.HTML - [LINK](Wireframes/WHY-WIREFRAMES.pdf)
-3. LOCAL.HTML - [LINK](Wireframes/RESCUES-WIREFRAMES.PDF)
+3. LOCAL.HTML - [LINK](Wireframes/RESCUES-WIREFRAMES.pdf)
 
 ## Thirdparty APIs
 ****
