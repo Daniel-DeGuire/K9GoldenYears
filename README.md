@@ -51,9 +51,9 @@ Five bottons at the top and bottom of the page: Index, About, Client, Services, 
 
 ## Wireframes
 ***
-1. INDEX.HTML - [LINK](Capstone/Wireframes/NDEX-WIREFRAMES.PDF)
-2. WHY.HTML - [LINK](Capstone/Wireframes/WIREFRAMES/WHY-WIREFRAMES.PDF)
-3. LOCAL.HTML - [LINK](Capstone/Wireframes/WIREFIRAMES/RESCUES-WIREFRAMES.PNG)
+1. INDEX.HTML - [LINK](Wireframes/INDEX-WIREFRAMES.PDF)
+2. WHY.HTML - [LINK](Wireframes/WIREFRAMES/WHY-WIREFRAMES.PDF)
+3. LOCAL.HTML - [LINK](Wireframes/WIREFIRAMES/RESCUES-WIREFRAMES.PNG)
 
 ## Thirdparty APIs
 ****
