@@ -1,0 +1,175 @@
+body {
+	margin: 0;
+	padding: 0;
+	text-align: left;
+	font: Arial, Helvetica, sans-serif;
+	font-size: 13px;
+	color: #000000;
+	background: #AFDCC6;
+}
+*
+{
+  margin: 0 auto 0 auto;
+ text-align:left;}
+
+a {
+	font-weight:bold;
+	color: #AFDCC6;
+	text-decoration:none;
+}
+a:hover
+{
+border-bottom:dotted 1px #659DBD;
+}
+#container
+{
+  display: block;
+  height:auto;
+  position: relative;
+  width: 750px;
+	height: 800px;
+	background-color: #8D8741;
+  background-repeat:repeat-y;
+  padding-left:17px;
+  padding-right:17px;
+  overflow:hidden;
+}
+#header h1
+{
+margin-top:20px;
+margin-left:10px;
+font-size:33px;
+color:#0A2645;
+float:left;
+}
+
+.off
+{
+color:#1652B4;
+}
+
+.welcometext
+{
+	padding-top:200px;
+	padding-left:10px;
+	padding-right:10px;
+}
+.welcometext h2
+{
+color:#123F83;
+text-align: center;
+top: 30px;
+font-size:30px;
+margin-bottom:20px;
+
+}
+
+.contenttext h2
+{
+color:#123F83;
+text-align: center;
+top: 30px;
+font-size:30px;
+margin-bottom:30px;
+
+}
+
+.contenttext
+{
+	padding-top:30px;
+	padding-left:10px;
+	padding-right:10px;
+}
+
+.formtext h3
+{
+	color: #AFDCC6;
+	text-align: center;
+	font-size:15px;
+}
+
+#footer
+{
+font-size:12px;
+color:#519FEE;
+margin-top:18px;
+width:750px;
+text-align:center;
+}
+#footer a, #footer a:visited
+{
+	text-align:center;
+color:#ADCCF1;
+	text-decoration:none;
+}
+
+html, body {
+text-align: center;
+}
+
+p {
+	text-align: center;
+	font-size:20px;
+}
+
+    /* if browser window is mobile or tablet */
+/**** For Smaller screens ******/
+
+@media (max-width: 549px){
+
+#hidden--mobile {
+    display: none !important;
+
+  }
+nav {
+	display: flex;
+	align-items: center;
+	flex-direction: column;
+}
+header {
+	height: 90vh;
+}
+
+nav > ul {
+	display: flex;
+	align-items: center;
+	flex-direction: column;
+	padding: 0 0;
+	font-size: 2em;
+}
+
+nav > ul > li {
+	padding: 1rem;
+
+	list-style-type: none;
+}
+
+}
+
+
+/***** For Bigger screens *****/
+
+@media (min-width: 550px){
+
+	header {
+    height: 20vh;
+  }
+
+  nav > ul {
+    display: flex;
+    justify-content: space-evenly;
+    padding: 0 0;
+  }
+
+  nav > ul > li {
+    display: inline-block;
+    text-decoration: none;
+    padding: 2rem 1rem;
+		font-size: 30px;
+
+  }
+
+  nav > .fa-bars {
+    display: none;
+  }
+}
