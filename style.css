@@ -26,8 +26,9 @@ border-bottom:dotted 1px #659DBD;
   display: block;
   height:auto;
   position: relative;
-  width: 750px;
-	height: 800px;
+  max-width: 750px;
+	min-width: 400px;
+	height: 900px;
 	background-color: #8D8741;
   background-repeat:repeat-y;
   padding-left:17px;
@@ -45,21 +46,23 @@ float:left;
 
 .off
 {
-color:#1652B4;
+color:#0A2645;;
 }
 
 .welcometext
 {
-	padding-top:200px;
+	padding-top:20px;
+	font-family: 'Slabo 27px', serif;
 	padding-left:10px;
 	padding-right:10px;
+	background-color: #AFDCC6;
 }
 .welcometext h2
 {
-color:#123F83;
+color: #123F83;
 text-align: center;
-top: 30px;
-font-size:30px;
+top: 220px;
+font-size:20px;
 margin-bottom:20px;
 
 }
@@ -76,14 +79,19 @@ margin-bottom:30px;
 
 .contenttext
 {
+	background-color: #AFDCC6;
+	font-family: 'Slabo 27px', serif;
 	padding-top:30px;
 	padding-left:10px;
 	padding-right:10px;
+	height: 500px;
 }
 
 .formtext h3
 {
 	color: #AFDCC6;
+	font-family: 'Slabo 27px', serif;
+	font-weight: 90;
 	text-align: center;
 	font-size:15px;
 }
@@ -125,6 +133,7 @@ nav {
 	display: flex;
 	align-items: center;
 	flex-direction: column;
+	font-family: 'Slabo 27px', serif;
 }
 header {
 	height: 90vh;
@@ -166,6 +175,7 @@ nav > ul > li {
     text-decoration: none;
     padding: 2rem 1rem;
 		font-size: 30px;
+		font-family: 'Slabo 27px', serif;
 
   }
 
