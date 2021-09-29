@@ -12,26 +12,13 @@ body {
   margin: 0 auto 0 auto;
  text-align:left;}
 
-a {
-	font-weight:bold;
-	color: #AFDCC6;
-	text-decoration:none;
-}
-a:hover
-{
-border-bottom:dotted 1px #659DBD;
-}
-
-
 #container
 {
   display: block;
   height:auto;
   position: relative;
-	top: 40px;
-  max-width: 800px;
-	min-width: 400px;
-	height: 900px;
+  width: 750px;
+	height: 800px;
 	background-color: #8D8741;
   background-repeat:repeat-y;
   padding-left:17px;
@@ -39,25 +26,62 @@ border-bottom:dotted 1px #659DBD;
   overflow:hidden;
 }
 
+#links
+{
+display:block;
+float:right;
+margin-top:30px;
+margin-bottom:30px;
+margin-right:10px;
+}
+
+#links a, #links a:visited
+{
+font-size:30px;
+font-weight:bold;
+margin-left:10px;
+margin-right:10px;
+color: #AFDCC6;
+text-decoration:none;
+}
+
+#links a:hover
+{
+border-bottom:dotted 1px #659DBD;
+}
+
+#header
+{
+height:50px;
+
+}
+
+#header h1
+{
+margin-top:20px;
+margin-left:10px;
+font-size:33px;
+color:#0A2645;
+float:left;
+}
+
 .off
 {
-color:#0A2645;;
+color:#1652B4;
 }
 
 .welcometext
 {
-	padding-top:20px;
-	font-family: 'Slabo 27px', serif;
+	padding-top:200px;
 	padding-left:10px;
 	padding-right:10px;
-	background-color: #8D8741;
 }
 .welcometext h2
 {
-color: #AFDCC6;
+color:#123F83;
 text-align: center;
-top: 220px;
-font-size:20px;
+top: 30px;
+font-size:30px;
 margin-bottom:20px;
 
 }
@@ -74,19 +98,14 @@ margin-bottom:30px;
 
 .contenttext
 {
-	background-color: #AFDCC6;
-	font-family: 'Slabo 27px', serif;
 	padding-top:30px;
 	padding-left:10px;
 	padding-right:10px;
-	height: 760px;
 }
 
 .formtext h3
 {
 	color: #AFDCC6;
-	font-family: 'Slabo 27px', serif;
-	font-weight: 90;
 	text-align: center;
 	font-size:15px;
 }
@@ -120,65 +139,12 @@ p {
 
 @media (max-width: 549px){
 
-.hidden--mobile {
+  .links {
     display: none !important;
-
   }
-nav {
-	display: flex;
-	align-items: center;
-	flex-direction: column;
-	font-family: 'Slabo 27px', serif;
-	background-color: #8D8741
 
-}
-header {
-	height: 90vh;
-}
-
-nav > ul {
-	display: flex;
-	align-items: center;
-	flex-direction: column;
-	padding: .3em;
-	font-size: 2em;
-
-}
-
-nav > ul > li {
-	padding: .5rem;
-	list-style-type: none;
-}
-
-}
 
 
 /***** For Bigger screens *****/
 
 @media (min-width: 550px){
-
-	header {
-    height: 20vh;
-  }
-	nav {
-		background-color: #8D8741;
-	}
-	nav > ul {
-    display: flex;
-    justify-content: space-around;
-    padding: 0 30rem;
-  }
-
-  nav > ul > li {
-    display: inline-flex;
-    text-decoration: none;
-    padding: 1rem 5rem;
-		font-size: 30px;
-		font-family: 'Slabo 27px', serif;
-
-  }
-
-  nav > .fa-bars {
-    display: none;
-  }
-}
