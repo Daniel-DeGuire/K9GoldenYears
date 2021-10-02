@@ -1,7 +1,5 @@
 import * as views from "./views";
 
-export default () => `
-${views["Home"]()}
-${views["About"]()}
-${views["Contact"]()}
-`;
+export default (st) => `
+  ${views[st.page](st)};
+  `;
