@@ -10,7 +10,8 @@ export default () => `
     <div class="contenttext">
     <h2>Give us a holler or a bark!</h2>
     <p> Fill out the following form.</p><br>
-    <form
+    <div class='inputWrapper'>
+    <form id = "
 action="https://formspree.io/f/moqyrkko"
 method="POST"
 >	<div id="entry">
