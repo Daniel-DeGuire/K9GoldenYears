@@ -44,14 +44,28 @@ border-bottom:dotted 1px #659DBD;
 	top: 30px;
   max-width: 800px;
 	min-width: 400px;
-	height: 900px;
+	min-height: 1000px;
 	background-color: #8D8741;
   background-repeat:repeat-y;
   padding-left:17px;
   padding-right:17px;
   overflow:hidden;
 }
-
+.dogs {
+	text-align:center;
+}
+#dog1 {
+	width: 30%;
+  height: 53%;
+}
+#dog2 {
+	width: 34%;
+  height: 50%;
+}
+#dog3 {
+	width: 30%;
+  height: 50%;
+}
 .off
 {
 color:#0A2645;;
@@ -92,7 +106,7 @@ margin-bottom:30px;
 	padding-top:30px;
 	padding-left:10px;
 	padding-right:10px;
-	height: 760px;
+	height: 880px;
 }
 
 .formtext h3
@@ -104,6 +118,23 @@ margin-bottom:30px;
 	font-size:15px;
 }
 
+.form-group {
+	text-align: center;
+
+}
+.inputWrapper  {
+	display: flex;
+	justify-content: center;
+	width: 100%;
+
+}
+input[type=text]:focus {
+  border: 3px solid #555;
+}
+
+.entry {
+	text-align: center;
+}
 #footer
 {
 font-size:12px;
@@ -164,6 +195,7 @@ nav > ul > li {
 }
 
 }
+
 
 
 /***** For Bigger screens *****/

@@ -11,8 +11,16 @@ export default () => `
       </div>
       <div class="contenttext">
       <h2>Furr-ever Homes for Senior Pets</h2>
-      <p> Senior pets are just as lovey as puppies.</p>
-      <img id="doggie.jpg" src= "https://images.pexels.com/photos/1805164/pexels-photo-1805164.jpeg?cs=srgb&dl=pexels-valeria-boltneva-1805164.jpg&fm=jpg" width="300px">
+      <p> Rescue organizations hire us to help market their senior dogs. </p><br><br>
+      <h2>Headquarter-less volunteers</h2>
+      <p>We are senior dog volunteers spread out in various locations in Saint Louis.</p><br><br>
+      <h2>We are donation based </h2>
+      <p>We are working on filing for a non-profit status. Please stand-by until then.</p><br>
+      <div class="dogs">
+      <img id="dog1" src= "https://images.pexels.com/photos/1805164/pexels-photo-1805164.jpeg?cs=srgb&dl=pexels-valeria-boltneva-1805164.jpg&fm=jpg">
+      <img id="dog2" src = "https://images.unsplash.com/photo-1607867062231-89acdc79a5e0?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=735&q=80">
+      <img  id="dog3" src="https://cdn.pixabay.com/photo/2019/10/26/18/36/labrador-4580060_960_720.jpg"
+      </div>
       </div>
   </div>
           </div>
