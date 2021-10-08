@@ -82,17 +82,17 @@ router.hooks({
           done();
         })
         .catch((err) => console.log(err));
-    }
-    if (page === "Home") {
-      axios
-        .get(`https://dog-api.kinduff.com/api/facts`)
-        .then((response) => {
-          state.Home.facts = response.data;
-          done();
-        })
-        .catch((error) => {
-          console.log("It puked", error);
-        });
+      // }
+      // if (page === "Home") {
+      //   axios
+      //     .get(`https://dog-api.kinduff.com/api/facts`)
+      //     .then((response) => {
+      //       state.Home.facts = response.data;
+      //       done();
+      //     })
+      //     .catch((error) => {
+      //       console.log("It puked", error);
+      //     });
     }
   },
 });

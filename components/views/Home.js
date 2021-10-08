@@ -17,10 +17,10 @@ export default (st) => `
           <h2>Random Dog Facts</h2>
           <P>Interesting dog facts.</P>
           <br>
-        <table id="facts">
-        ${st.facts}
-<tr><th>Random</th><th>dog</th><th>facts</th><th>generator</th></tr>
-</table>
+         <p>1. A dog’s nose print is unique, much like a person’s fingerprint.<br>
+          2. Forty-five percent of U.S. dogs sleep in their owner’s bed.<br>
+          3. There are over 75 million pet dogs in the U.S.—more than in any other country.
+          </p>
           </div>
       </div>
 </table>
