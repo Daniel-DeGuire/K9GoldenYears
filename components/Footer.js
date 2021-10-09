@@ -1,3 +1,3 @@
 export default () => `
-<footer> <img src="tiktok.png" width="50px"> Click Here! Cute Dogs.</footer>
+<footer> <img src="https://cdn.pixabay.com/photo/2021/06/15/12/28/tiktok-6338430_960_720.png" width="50px"> </footer>
 `;

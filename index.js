@@ -67,7 +67,20 @@ router.hooks({
     const page =
       params && params.hasOwnProperty("page")
         ? capitalize(params.page)
-        : "About";
+        : "Home";
+    if (page === "Home") {
+      axios
+        .get(
+          "https://api.countapi.xyz/hit/k9goldenyearsfoundation.netlify.app/visits"
+        )
+        .then((response) => {
+          state.Home.visits = response.data.value;
+          done();
+        })
+        .catch((error) => {
+          console.log("It puked", error);
+        });
+    }
     if (page === "About") {
       axios
         .get(
@@ -82,19 +95,6 @@ router.hooks({
           done();
         })
         .catch((err) => console.log(err));
-    }
-    if (page === "Home") {
-      axios
-        .get(
-          "https://api.countapi.xyz/hit/k9goldenyearsfoundation.netlify.app/visits"
-        )
-        .then((response) => {
-          state.Home.visits = response.data.value;
-          done();
-        })
-        .catch((error) => {
-          console.log("It puked", error);
-        });
     }
   },
 });
