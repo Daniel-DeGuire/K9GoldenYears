@@ -20,7 +20,12 @@ export default (st) => `
          <p>1. A dog’s nose print is unique, much like a person’s fingerprint.<br>
           2. Forty-five percent of U.S. dogs sleep in their owner’s bed.<br>
           3. There are over 75 million pet dogs in the U.S.—more than in any other country.
-          </p>
+          </p><br><br><br>
+          <h2>Thank you, for visiting our site!</h2>
+          <p><table id="counter">
+          <tr><th>Visitor</th><th>number:
+          ${st.visits}
+          </table></p>
           </div>
       </div>
 </table>
