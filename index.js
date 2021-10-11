@@ -70,9 +70,7 @@ router.hooks({
         : "Home";
     if (page === "Home") {
       axios
-        .get(
-          "https://api.countapi.xyz/hit/k9goldenyearsfoundation.netlify.app/visits"
-        )
+        .get(`${process.env.COUNTER_API_URL}`)
         .then((response) => {
           state.Home.visits = response.data.value;
           done();
