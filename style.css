@@ -154,6 +154,21 @@ p {
 	font-size:20px;
 }
 
+.maps {
+	overflow:hidden;
+	padding-bottom:70.25%;
+	text-align:center;
+	position:relative;
+	height:0;
+}
+.map iframe{
+	left:0;
+	top:0;
+	height:150%;
+	width:100%;
+	position:absolute;
+}
+
     /* if browser window is mobile or tablet */
 /**** For Smaller screens ******/
 
