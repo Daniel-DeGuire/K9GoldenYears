@@ -12,6 +12,7 @@ export default (st) => `
       <div class="contenttext">
       <h2>Furr-ever Homes for Senior Pets</h2>
       <p> Rescue organizations hire us to help market their senior dogs. </p><br><br>
+      <p>Dogs we have: ${st.hound}</p><br>
       <h2>Virtual visit our new Headquarters</h2>
       <p>Our new tech hub is now open in Brentwood, MO. We are working on a YouTube video to show our clients.</p><br><br>
       <p>Weather in ${st.weather.city} ${kelvinToFahrenheit(

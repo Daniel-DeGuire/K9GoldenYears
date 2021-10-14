@@ -26,6 +26,7 @@ export default (st) => `
           <tr><th>Visitor</th><th>number:
           ${st.visits}
           </table></p>
+
           </div>
       </div>
 </table>
