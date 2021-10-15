@@ -14,8 +14,11 @@ export default (st) => `
            <p> Rescue organizations hire us to help market their senior dogs. </p><br><br>
       <p>Breed we have:
         <select name="breedsWeHave" id="breedsWeHave">
+          <optgroup label="Bulldogs">
+            <option value="Bulldogs">${st.bulldog}</option>
           <optgroup label="Hounds">
-            <option value="houndOne">${st.hound}</option>
+          <option value="Hounds">${st.ridgeback}</option>
+          </option>
 </select></p><br>
       <h2>Virtual visit our new Headquarters</h2>
       <p>Our new tech hub is now open in Brentwood, MO. We are working on a YouTube video to show our clients.</p><br><br>
