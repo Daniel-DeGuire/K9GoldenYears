@@ -12,7 +12,13 @@ export default (st) => `
       <div class="contenttext">
       <h2>Furr-ever Homes for Senior Pets</h2>
       <p> Rescue organizations hire us to help market their senior dogs. </p><br><br>
-      <p>Dogs we have: ${st.hound}</p><br>
+      <p>Breed we have:
+      <select name="c" id="Breeds we have">
+  <option value="hound1">${st.hound[1]}</option>
+  <option value="saab">${st.hound[2]}</option>
+  <option value="mercedes">${st.hound[3]}</option>
+  <option value="audi">${st.hound[4]}</option>
+</select></p><br>
       <h2>Virtual visit our new Headquarters</h2>
       <p>Our new tech hub is now open in Brentwood, MO. We are working on a YouTube video to show our clients.</p><br><br>
       <p>Weather in ${st.weather.city} ${kelvinToFahrenheit(
