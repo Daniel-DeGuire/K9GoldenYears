@@ -81,6 +81,19 @@ router.hooks({
     }
     if (page === "About") {
       axios
+        .get(`${process.env.DOG_BREEDS_API_URL}`)
+        .then((response) => {
+          state.About.hound = response.data.message.hound;
+          state.About.bulldog = response.data.message.bulldog;
+          state.About.ridgeback = response.data.message.ridgeback;
+          done();
+        })
+        .catch((error) => {
+          console.log("It puked", error);
+        });
+    }
+    if (page === "About") {
+      axios
         .get(
           `https://api.openweathermap.org/data/2.5/weather?appid=${process.env.OPEN_WEATHER_MAP_API_KEY}&q=Brentwood`
         )

@@ -4,14 +4,26 @@ export default (st) => `
 <div id="header">
 
 
-      <div id="content">
+  <div id="content">
       </div>
-      <div class="welcometext">
-      <h2>We want to bolden folks to adopt golden!</h2>
+       <div class="welcometext">
+        <h2>We want to bolden folks to adopt golden!</h2>
       </div>
-      <div class="contenttext">
-      <h2>Furr-ever Homes for Senior Pets</h2>
-      <p> Rescue organizations hire us to help market their senior dogs. </p><br><br>
+        <div class="contenttext">
+          <h2>Furr-ever Homes for Senior Pets</h2>
+           <p> Rescue organizations hire us to help market their senior dogs. </p><br><br>
+      <p>Breed we have:
+        <select name="breedsWeHave" id="breedsWeHave">
+          <optgroup label="Hounds">
+            <option value="houndOne">${st.hound[1]}</option>
+            <option value="houndTwo">${st.hound[2]}</option>
+            <option value="houndThree">${st.hound[3]}</option>
+            <option value="houndFour">${st.hound[4]}</option>
+          <optgroup label="Bulldogs">
+          <option value="houndOne">${st.bulldog[1]}</option>
+          <option value="houndOne">${st.bulldog[2]}</option>
+
+</select></p><br>
       <h2>Virtual visit our new Headquarters</h2>
       <p>Our new tech hub is now open in Brentwood, MO. We are working on a YouTube video to show our clients.</p><br><br>
       <p>Weather in ${st.weather.city} ${kelvinToFahrenheit(
