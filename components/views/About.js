@@ -15,14 +15,7 @@ export default (st) => `
       <p>Breed we have:
         <select name="breedsWeHave" id="breedsWeHave">
           <optgroup label="Hounds">
-            <option value="houndOne">${st.hound[1]}</option>
-            <option value="houndTwo">${st.hound[2]}</option>
-            <option value="houndThree">${st.hound[3]}</option>
-            <option value="houndFour">${st.hound[4]}</option>
-          <optgroup label="Bulldogs">
-          <option value="houndOne">${st.bulldog[1]}</option>
-          <option value="houndOne">${st.bulldog[2]}</option>
-
+            <option value="houndOne">${st.hound}</option>
 </select></p><br>
       <h2>Virtual visit our new Headquarters</h2>
       <p>Our new tech hub is now open in Brentwood, MO. We are working on a YouTube video to show our clients.</p><br><br>
