@@ -1,4 +1,4 @@
-// 1. Import Statement
+// Importing and creating modules
 import { Header, Nav, Main, Footer } from "./components";
 import * as state from "./store";
 import axios from "axios";
@@ -7,10 +7,11 @@ import { capitalize } from "lodash";
 import dotenv from "dotenv";
 dotenv.config();
 
-// 2. Declaring Router
+//  Declaring Router
+
 const router = new Navigo(window.location.origin);
 
-// 3. Render Function
+// Render Function
 function render(st = state.Home) {
   document.querySelector("#root").innerHTML = `
   ${Header(st)}
@@ -24,7 +25,7 @@ function render(st = state.Home) {
   addEventListeners(st);
 }
 
-// 4. Event Handler Function
+// Event Handler Function
 function addEventListeners(st) {
   // add event listeners to Nav items for navigation
   document.querySelectorAll("nav a").forEach((navLink) =>
@@ -111,7 +112,7 @@ router.hooks({
   },
 });
 
-// 6. Router.on
+// Router.on
 router
   .on({
     "/": () => render(state.Home),

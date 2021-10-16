@@ -1,12 +1,21 @@
+// Importing and creating modules
+
 const express = require("express");
 const app = express();
+
+// Using Middleware - declaring Function
 
 const logging = (request, response, next) => {
   console.log(`${request.method} ${request.url} ${Date.now()}`);
   next();
 };
+
+// Using Middleware - Body-Parsing
+
 app.use(express.json());
 app.use(logging);
+
+// Creating route handlers
 
 app
   .route("/status")
@@ -16,6 +25,7 @@ app
   .post((request, response) => {
     response.json({ requestBody: request.body });
   });
+
 app
   .route("/dogs")
   .get((request, response) => {
@@ -32,6 +42,8 @@ app.route("/users/:id").get((request, response) => {
   // handle GET request for post with an id of "id"
   response.send(JSON.stringify({ user_id: id }));
 });
+
+// Port Configuration
 
 const PORT = process.env.PORT || 4040;
 
