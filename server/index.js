@@ -1,5 +1,6 @@
 const express = require("express");
 const pizzas = require("./routes/pizzas");
+const dogs = require("./routes/dogs");
 const dotenv = require("dotenv");
 const mongoose = require("mongoose");
 
@@ -40,6 +41,7 @@ app.use(express.json());
 app.use(logging);
 app.use(cors);
 app.use("/pizzas", pizzas);
+app.use("/dogs", dogs);
 
 app
   .route("/status")

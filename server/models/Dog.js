@@ -1,15 +1,15 @@
 const mongoose = require("mongoose");
 
-const pizzaSchema = new mongoose.Schema({
+const dogSchema = new mongoose.Schema({
   paramOne: String,
   paramTwo: String,
   paramThree: String,
   paramFour: [String],
 });
 
-const Pizza = mongoose.model("Pizza", pizzaSchema);
+const Dog = mongoose.model("Dog", dogSchema);
 
 module.exports = {
-  model: Pizza,
-  schema: pizzaSchema,
+  model: Dog,
+  schema: dogSchema,
 };

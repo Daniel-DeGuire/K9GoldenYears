@@ -1,47 +1,47 @@
 const { Router } = require("express");
-const pizza = require("../models/Pizza");
+const dog = require("../models/Dog");
 const router = Router();
 
 // Create record in MongoDB
 router.post("/", (request, response) => {
-  const newPizza = new pizza.model(request.body);
-  newPizza.save((err, pizza) => {
-    return err ? response.sendStatus(500).json(err) : response.json(pizza);
+  const newDog = new dog.model(request.body);
+  newDog.save((err, dog) => {
+    return err ? response.sendStatus(500).json(err) : response.json(dog);
   });
 });
 
-// Get all pizza records
+// Get all dog records
 router.get("/", (request, response) => {
-  pizza.model.find({}, (error, data) => {
+  dog.model.find({}, (error, data) => {
     if (error) return response.sendStatus(500).json(error);
     return response.json(data);
   });
 });
-// Get a pizza by ID
+// Get a dog by ID
 router.get("/:id", (request, response) => {
-  pizza.model.findById(request.params.id, (error, data) => {
+  dog.model.findById(request.params.id, (error, data) => {
     if (error) return response.sendStatus(500).json(error);
     return response.json(data);
   });
 });
-// Delete a pizza by ID
+// Delete a dog by ID
 router.delete("/:id", (request, response) => {
-  pizza.model.findByIdAndRemove(request.params.id, {}, (error, data) => {
+  dog.model.findByIdAndRemove(request.params.id, {}, (error, data) => {
     if (error) return response.sendStatus(500).json(error);
     return response.json(data);
   });
 });
-// Update a pizza by ID
+// Update a dog by ID
 router.put("/:id", (request, response) => {
   const body = request.body;
-  pizza.model.findByIdAndUpdate(
+  dog.model.findByIdAndUpdate(
     request.params.id,
     {
       $set: {
-        paramOne: body.paramOne,
-        paramTwo: body.Two,
-        paramThree: body.parmFour,
-        paramFour: body.parmFour,
+        crust: body.crust,
+        cheese: body.cheese,
+        sauce: body.sauce,
+        toppings: body.toppings,
       },
     },
     (error, data) => {
