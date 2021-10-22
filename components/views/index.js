@@ -1,4 +1,5 @@
 export { default as Home } from "./Home";
 export { default as About } from "./About";
 export { default as Contact } from "./Contact";
-export { default as Request } from "./Request";
+export { default as Dog } from "./Dog";
+export { default as Submit } from "./Submit";

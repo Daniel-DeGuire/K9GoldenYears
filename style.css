@@ -1,226 +1,204 @@
-
 header {
-	text-align: center;
-	min-width: 400px;
+  text-align: center;
+  min-width: 400px;
 }
 
 body {
-	margin: 0;
-	padding: 0;
-	text-align: left;
-	font: Arial, Helvetica, sans-serif;
-	font-size: 13px;
-	background: #AFDCC6;
+  margin: 0;
+  padding: 0;
+  text-align: left;
+  font: Arial, Helvetica, sans-serif;
+  font-size: 13px;
+  background: #afdcc6;
 }
-*
-{
+* {
   margin: 0 auto 0 auto;
- text-align:left;}
+  text-align: left;
+}
 
 a {
-	font-weight:bold;
-	color: #AFDCC6;
-	text-decoration:none;
+  font-weight: bold;
+  color: #afdcc6;
+  text-decoration: none;
 }
-a:hover
-{
-border-bottom:dotted 1px #659DBD;
+a:hover {
+  border-bottom: dotted 1px #659dbd;
 }
 
-
-#container
-{
+#container {
   display: block;
-  height:auto;
+  height: auto;
   position: relative;
-	top: 30px;
+  top: 30px;
   max-width: 800px;
-	min-width: 365px;
-	min-height: 1000px;
-	background-color: #8D8741;
-  background-repeat:repeat-y;
-  padding-left:17px;
-  padding-right:17px;
-  overflow:hidden;
+  min-width: 365px;
+  min-height: 1000px;
+  background-color: #8d8741;
+  background-repeat: repeat-y;
+  padding-left: 17px;
+  padding-right: 17px;
+  overflow: hidden;
 }
 
 .dogs {
-	text-align:center;
+  text-align: center;
 }
 #dog1 {
-	width: 30%;
+  width: 30%;
   height: 53%;
 }
 #dog2 {
-	width: 34%;
+  width: 34%;
   height: 50%;
 }
 #dog3 {
-	width: 30%;
+  width: 30%;
   height: 50%;
 }
-.off
-{
-color:#0A2645;;
+.off {
+  color: #0a2645;
 }
 
-.welcometext
-{
-	padding-top:20px;
-	font-family: 'Slabo 27px', serif;
-	padding-left:10px;
-	padding-right:10px;
-	background-color: #8D8741;
+.welcometext {
+  padding-top: 20px;
+  font-family: "Slabo 27px", serif;
+  padding-left: 10px;
+  padding-right: 10px;
+  background-color: #8d8741;
 }
-.welcometext h2
-{
-color: #AFDCC6;
-text-align: center;
-top: 220px;
-font-size:20px;
-margin-bottom:20px;
-
+.welcometext h2 {
+  color: #afdcc6;
+  text-align: center;
+  top: 220px;
+  font-size: 20px;
+  margin-bottom: 20px;
 }
 
-.contenttext h2
-{
-color:#123F83;
-text-align: center;
-top: 30px;
-font-size:30px;
-margin-bottom:30px;
-
+.contenttext h2 {
+  color: #123f83;
+  text-align: center;
+  top: 30px;
+  font-size: 30px;
+  margin-bottom: 30px;
 }
 
-.contenttext
-{
-	background-color: #AFDCC6;
-	font-family: 'Slabo 27px', serif;
-	padding-top:30px;
-	padding-left:10px;
-	padding-right:10px;
-	height: 880px;
+.contenttext {
+  background-color: #afdcc6;
+  font-family: "Slabo 27px", serif;
+  padding-top: 30px;
+  padding-left: 10px;
+  padding-right: 10px;
+  height: 880px;
 }
 
-.formtext h3
-{
-	color: #AFDCC6;
-	font-family: 'Slabo 27px', serif;
-	font-weight: 90;
-	text-align: center;
-	font-size:15px;
+.formtext h3 {
+  color: #afdcc6;
+  font-family: "Slabo 27px", serif;
+  font-weight: 90;
+  text-align: center;
+  font-size: 15px;
 }
 
 .form-group {
-	text-align: center;
-
+  text-align: center;
 }
-.inputWrapper  {
-	display: flex;
-	justify-content: center;
-	width: 100%;
-
+.inputWrapper {
+  display: flex;
+  justify-content: center;
+  width: 100%;
 }
-input[type=text]:focus {
+input[type="text"]:focus {
   border: 3px solid #555;
 }
 
 .entry {
-	text-align: center;
+  text-align: center;
 }
-footer
-{
-font-size:12px;
-margin-top:30px;
-height: 35px;
-min-width: 375px;
-text-align:left;
-font-family: 'Slabo 27px', serif;
+footer {
+  font-size: 12px;
+  margin-top: 30px;
+  height: 35px;
+  min-width: 375px;
+  text-align: left;
+  font-family: "Slabo 27px", serif;
 }
-#footer a, #footer a:visited
-{
-	text-align:center;
-color:#ADCCF1;
-	text-decoration:none;
+#footer a,
+#footer a:visited {
+  text-align: center;
+  color: #adccf1;
+  text-decoration: none;
 }
 
-html, body {
-text-align: center;
+html,
+body {
+  text-align: center;
 }
 
 p {
-	text-align: center;
-	font-size:20px;
+  text-align: center;
+  font-size: 20px;
 }
 
 .maps {
-	overflow:hidden;
-	padding-bottom:70.25%;
-	text-align:center;
-	position:relative;
-	height:0;
+  overflow: hidden;
+  padding-bottom: 70.25%;
+  text-align: center;
+  position: relative;
+  height: 0;
 }
-.map iframe{
-	left:0;
-	top:0;
-	height:150%;
-	width:100%;
-	position:absolute;
+.map iframe {
+  left: 0;
+  top: 0;
+  height: 150%;
+  width: 100%;
+  position: absolute;
 }
 
-    /* if browser window is mobile or tablet */
+/* if browser window is mobile or tablet */
 /**** For Smaller screens ******/
 
-@media (max-width: 549px){
-
-.hidden--mobile {
+@media (max-width: 549px) {
+  .hidden--mobile {
     display: none !important;
-
   }
-nav {
-	display: flex;
-	align-items: center;
-	flex-direction: column;
-	min-width: 400px;
-	font-family: 'Slabo 27px', serif;
-	background-color: #8D8741
+  nav {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    min-width: 400px;
+    font-family: "Slabo 15px", serif;
+    background-color: #8d8741;
+  }
+  header {
+    height: 11vh;
+  }
+  nav > i {
+    padding: 0.4em;
+  }
+  nav > ul {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    padding: 0 0;
+    font-size: 1em;
+  }
 
+  nav > ul > li {
+    padding: 0.2rem;
+    list-style-type: none;
+  }
 }
-header {
-	height: 11vh;
-}
-nav > i {
-	padding: .4em;
-}
-nav > ul {
-	display: flex;
-	align-items: center;
-	flex-direction: column;
-	padding: 0 0;
-	font-size: 2em;
-
-}
-
-nav > ul > li {
-	padding: .2rem;
-	list-style-type: none;
-}
-
-}
-
-
 
 /***** For Bigger screens *****/
 
-@media (min-width: 550px){
-
-	header {
+@media (min-width: 550px) {
+  header {
     height: 10vh;
   }
-	nav {
-		background-color: #8D8741;
-	}
-	nav > ul {
+  nav {
+    background-color: #8d8741;
+  }
+  nav > ul {
     display: flex;
     justify-content: space-around;
     padding: 0 30rem;
@@ -229,10 +207,9 @@ nav > ul > li {
   nav > ul > li {
     display: inline-flex;
     text-decoration: none;
-    padding: 1rem 5rem;
-		font-size: 30px;
-		font-family: 'Slabo 27px', serif;
-
+    padding: 1rem 2rem;
+    font-size: 25px;
+    font-family: "Slabo 27px", serif;
   }
 
   nav > .fa-bars {

@@ -109,6 +109,17 @@ router.hooks({
         })
         .catch((err) => console.log(err));
     }
+    if (page === "Request") {
+      axios
+        .get(`${process.env.PIZZA_PLACE_API_URL}`)
+        .then((response) => {
+          state.Dogs.dog = response.data;
+          done();
+        })
+        .catch((error) => {
+          console.log("It puked", error);
+        });
+    }
   },
 });
 

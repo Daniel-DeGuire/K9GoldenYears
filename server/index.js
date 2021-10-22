@@ -1,21 +1,45 @@
-// Importing and creating modules
-
 const express = require("express");
+const pizzas = require("./routes/pizzas");
+const dotenv = require("dotenv");
+const mongoose = require("mongoose");
+
+dotenv.config();
+
 const app = express();
 
-// Using Middleware - declaring Function
+mongoose.connect(process.env.MONGODB);
+const db = mongoose.connection;
+
+db.on("error", console.error.bind(console, "Connection error:"));
+db.once(
+  "open",
+  console.log.bind(console, "Successfully opened connection to Mongo!")
+);
 
 const logging = (request, response, next) => {
   console.log(`${request.method} ${request.url} ${Date.now()}`);
   next();
 };
 
-// Using Middleware - Body-Parsing
+// CORS Middleware
+const cors = (req, res, next) => {
+  res.setHeader(
+    "Access-Control-Allow-Headers",
+    "X-Requested-With,content-type, Accept,Authorization,Origin"
+  );
+  res.setHeader("Access-Control-Allow-Origin", "*");
+  res.setHeader(
+    "Access-Control-Allow-Methods",
+    "GET, POST, OPTIONS, PUT, PATCH, DELETE"
+  );
+  res.setHeader("Access-Control-Allow-Credentials", true);
+  next();
+};
 
 app.use(express.json());
 app.use(logging);
-
-// Creating route handlers
+app.use(cors);
+app.use("/pizzas", pizzas);
 
 app
   .route("/status")
@@ -26,24 +50,12 @@ app
     response.json({ requestBody: request.body });
   });
 
-app
-  .route("/dogs")
-  .get((request, response) => {
-    // handle GET request
-    response.send(JSON.stringify({ message: "All dogs" }));
-  })
-  .post((request, response) => {
-    response.send(JSON.stringify({ message: "Submitted Dogs" }));
-  });
-
 app.route("/users/:id").get((request, response) => {
   // express adds a "params" Object to requests
   const id = request.params.id;
   // handle GET request for post with an id of "id"
   response.send(JSON.stringify({ user_id: id }));
 });
-
-// Port Configuration
 
 const PORT = process.env.PORT || 4040;
 
