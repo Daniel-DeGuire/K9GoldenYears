@@ -38,10 +38,10 @@ router.put("/:id", (request, response) => {
     request.params.id,
     {
       $set: {
-        crust: body.crust,
-        cheese: body.cheese,
-        sauce: body.sauce,
-        toppings: body.toppings,
+        paramOne: body.paramOne,
+        paramTwo: body.Two,
+        paramThree: body.parmFour,
+        paramFour: body.parmFour,
       },
     },
     (error, data) => {

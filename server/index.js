@@ -1,5 +1,5 @@
 const express = require("express");
-const pizzas = require("./routes/pizzas");
+// const pizzas = require("./routes/pizzas");
 const dogs = require("./routes/dogs");
 const dotenv = require("dotenv");
 const mongoose = require("mongoose");
@@ -40,7 +40,7 @@ const cors = (req, res, next) => {
 app.use(express.json());
 app.use(logging);
 app.use(cors);
-app.use("/pizzas", pizzas);
+// app.use("/pizzas", pizzas);
 app.use("/dogs", dogs);
 
 app
