@@ -51,7 +51,7 @@ export default (st) => `
               type="checkbox"
               id="id_of_checkbox1"
               class="items1"
-              name="chracteristics"
+              name="paramFour"
               value="Friendly"
             /><br>
             <label for="char1">Friendly</label>
@@ -59,7 +59,7 @@ export default (st) => `
               type="checkbox"
               id="id_of_checkbox2"
               class="items1"
-              name="characteristics"
+              name="paramFour"
               value="Good with Children"
             /><br>
             <label for="char2">Good with Children</label>
@@ -67,7 +67,7 @@ export default (st) => `
               type="checkbox"
               id="id_of_checkbox3"
               class="items1"
-              name="characteristics"
+              name="paramFour"
               value="Playful"
             /><br>
             <label for="char3">Playful</label>
@@ -75,7 +75,7 @@ export default (st) => `
               type="checkbox"
               id="id_of_checkbox4"
               class="items1"
-              name="characteristics"
+              name="paramFour"
               value="listens well"
             /><br>
             <label for="char4">Listens Well</label>
@@ -83,7 +83,7 @@ export default (st) => `
               type="checkbox"
               id="id_of_checkbox5"
               class="items1"
-              name="toppings"
+              name="paramFour"
               value="medical problem"
             /><br>
           </div>

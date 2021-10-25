@@ -109,11 +109,11 @@ router.hooks({
         })
         .catch((err) => console.log(err));
     }
-    if (page === "Request") {
+    if (page === "Dog") {
       axios
         .get(`${process.env.DOG_REQUEST_API_URL}`)
         .then((response) => {
-          state.Dogs.dog = response.data;
+          state.About.dog = response.data.message;
           done();
         })
         .catch((error) => {

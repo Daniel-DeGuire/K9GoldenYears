@@ -11,8 +11,7 @@ export default (st) => `
           </div>
           <div class="contenttext">
           <h2>Finder:</h2>
-
-
+          ${st.dog}
 </section>
 `;
 // TO DO: Add API Functionality
