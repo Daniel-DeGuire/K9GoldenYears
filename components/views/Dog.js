@@ -11,7 +11,15 @@ export default (st) => `
           </div>
           <div class="contenttext">
           <h2>Finder:</h2>
-          ${st.dog}
+          <tr><th>Breed</th><th>Color</th><th>Size</th><th>Characteristcs</th></tr>
+${st.dogs
+  .map((dog) => {
+    return `<tr><td>${dog.paramOne}</td><td>${dog.paramOne}</td><td>${
+      dog.paramOne
+    }</td><td>${pizza.paramFour.join(" & ")}</td></tr>`;
+  })
+  .join("")}
+</table>
 </section>
 `;
 // TO DO: Add API Functionality

@@ -113,7 +113,7 @@ router.hooks({
       axios
         .get(`${process.env.DOG_REQUEST_API_URL}`)
         .then((response) => {
-          state.About.dog = response.data.message;
+          state.Dog.dogs = response.data;
           done();
         })
         .catch((error) => {
