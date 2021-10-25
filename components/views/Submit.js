@@ -11,10 +11,11 @@ export default (st) => `
           </div>
           <div class="contenttext">
           <h2>Finder:</h2>
-          <form id="order" method="POST" action="">
           <h2>Report a lost Senior Dog</h2>
+          <div class="form">
+          <form id="order" method="POST" action="">
           <div>
-            <label for="paramOne">Select a Breed</label>
+            <label for="paramOne">Select a Breed</label><br>
             <select id="paramOne" name="paramOne">
               <option value="huskyDog">Husky</option>
               <option value="germanShepard">German Shepard</option>
@@ -25,7 +26,7 @@ export default (st) => `
             </select>
           </div>
           <div>
-            <label for="paramTwo">Color</label>
+            <label for="paramTwo">Color</label><br>
             <input
               type="text"
               name="paramTwo"
@@ -35,7 +36,7 @@ export default (st) => `
             />
           </div>
           <div>
-            <label for="paramThree">Size</label>
+            <label for="paramThree">Size</label><br>
             <input
               type="text"
               name="paramThree"
@@ -45,50 +46,49 @@ export default (st) => `
             />
           </div>
           <div>
-            <label for="toppings">Characteristics</label>
+            <label for="char0">Medical Problem</label>
             <input
               type="checkbox"
               id="id_of_checkbox1"
               class="items1"
               name="chracteristics"
               value="Friendly"
-            />
-            <label for="top1">Friendly</label>
+            /><br>
+            <label for="char1">Friendly</label>
             <input
               type="checkbox"
               id="id_of_checkbox2"
               class="items1"
               name="characteristics"
               value="Good with Children"
-            />
-            <label for="top2">Goold with Children</label>
+            /><br>
+            <label for="char2">Good with Children</label>
             <input
               type="checkbox"
               id="id_of_checkbox3"
               class="items1"
               name="characteristics"
               value="Playful"
-            />
-            <label for="top3">Playful</label>
+            /><br>
+            <label for="char3">Playful</label>
             <input
               type="checkbox"
               id="id_of_checkbox4"
               class="items1"
               name="characteristics"
               value="listens well"
-            />
-            <label for="top4">Listens Well</label>
+            /><br>
+            <label for="char4">Listens Well</label>
             <input
               type="checkbox"
               id="id_of_checkbox5"
               class="items1"
               name="toppings"
               value="medical problem"
-            />
-            <label for="top5">Medical problem</label>
+            /><br>
           </div>
           <input type="submit" name="submit" value="Submit Lost Dog" />
         </form>
-
+</div>
 </section>
 `;

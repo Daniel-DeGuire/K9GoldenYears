@@ -111,7 +111,7 @@ router.hooks({
     }
     if (page === "Request") {
       axios
-        .get(`${process.env.PIZZA_PLACE_API_URL}`)
+        .get(`${process.env.DOG_REQUEST_API_URL}`)
         .then((response) => {
           state.Dogs.dog = response.data;
           done();
@@ -119,6 +119,38 @@ router.hooks({
         .catch((error) => {
           console.log("It puked", error);
         });
+    }
+    if (st.page === "Submit") {
+      document.querySelector("form").addEventListener("submit", (event) => {
+        event.preventDefault();
+
+        const inputList = event.target.elements;
+
+        const paramFour = [];
+        for (let input of inputList.paramFour) {
+          if (input.checked) {
+            paramFour.push(input.value);
+          }
+        }
+
+        const requestData = {
+          paramOne: inputList.paramOne.value,
+          paramTwo: inputList.paramTwo.value,
+          paramThree: inputList.paramThree.value,
+          paramfour: paramFour,
+        };
+        console.log("request Body", requestData);
+
+        axios
+          .post(`${process.env.DOG_REQUEST_API_URL}`, requestData)
+          .then((response) => {
+            state.Dog.dogs.push(response.data);
+            router.navigate("/Dog");
+          })
+          .catch((error) => {
+            console.log("It puked", error);
+          });
+      });
     }
   },
 });
@@ -132,36 +164,3 @@ router
   .resolve();
 
 // add submit ordering functionality
-
-if (st.page === "Submit") {
-  document.querySelector("form").addEventListener("submit", (event) => {
-    event.preventDefault();
-
-    const inputList = event.target.elements;
-
-    const paramFour = [];
-    for (let input of inputList.paramFour) {
-      if (input.checked) {
-        paramFour.push(input.value);
-      }
-    }
-
-    const requestData = {
-      paramOne: inputList.paramOne.value,
-      paramTwo: inputList.paramTwo.value,
-      paramThree: inputList.paramThree.value,
-      paramfour: paramFour,
-    };
-    console.log("request Body", requestData);
-
-    axios
-      .post(`${process.env.DOG_REQUEST_API_URL}`, requestData)
-      .then((response) => {
-        state.Dog.dogs.push(response.data);
-        router.navigate("/Dog");
-      })
-      .catch((error) => {
-        console.log("It puked", error);
-      });
-  });
-}

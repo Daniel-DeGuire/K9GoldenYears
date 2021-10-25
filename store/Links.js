@@ -2,6 +2,6 @@ export default [
   { title: "Home", text: "Home" },
   { title: "About", text: "About" },
   { title: "Contact", text: "Contact" },
-  { title: "Dog", text: "Lost Dog" },
+  { title: "Dog", text: "LostBoard" },
   { title: "Submit", text: "Submit" },
 ];
