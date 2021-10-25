@@ -14,9 +14,9 @@ export default (st) => `
           <tr><th>Breed</th><th>Color</th><th>Size</th><th>Characteristcs</th></tr>
 ${st.dogs
   .map((dog) => {
-    return `<tr><td>${dog.paramOne}</td><td>${dog.paramOne}</td><td>${
-      dog.paramOne
-    }</td><td>${pizza.paramFour.join(" & ")}</td></tr>`;
+    return `<tr><td>${dog.paramOne}</td><td>${dog.paramTwo}</td><td>${
+      dog.paramThree
+    }</td><td>${dog.paramFour.join(" & ")}</td></tr>`;
   })
   .join("")}
 </table>

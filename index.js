@@ -137,7 +137,7 @@ router.hooks({
           paramOne: inputList.paramOne.value,
           paramTwo: inputList.paramTwo.value,
           paramThree: inputList.paramThree.value,
-          paramfour: paramFour,
+          paramFour: paramFour,
         };
         console.log("request Body", requestData);
 
