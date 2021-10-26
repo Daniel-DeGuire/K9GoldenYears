@@ -10,7 +10,9 @@ export default (st) => `
           <h2>Strive to change lives of dogs in their golden years.</h2>
           </div>
           <div class="contenttext">
-          <h2>Finder:</h2>
+          <h2>LostBoard:</h2><br>
+          <p>Reported Lost Senior Dogs</p><br><br>
+          <table id="lostDog">
           <tr><th>Breed</th><th>Color</th><th>Size</th><th>Characteristcs</th></tr>
 ${st.dogs
   .map((dog) => {

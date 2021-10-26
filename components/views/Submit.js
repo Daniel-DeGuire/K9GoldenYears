@@ -1,4 +1,6 @@
-export default (st) => `
+import html from "html-literal";
+
+export default () => html`
 <section id="home">
 <div id="container">
 <div id="header">
@@ -15,7 +17,7 @@ export default (st) => `
           <div class="form">
           <form id="order" method="POST" action="">
           <div>
-            <label for="paramOne">Select a Breed</label><br>
+            <label for="paramOne">Select a Breed</label>
             <select id="paramOne" name="paramOne">
               <option value="huskyDog">Husky</option>
               <option value="germanShepard">German Shepard</option>
@@ -26,7 +28,7 @@ export default (st) => `
             </select>
           </div>
           <div>
-            <label for="paramTwo">Color</label><br>
+            <label for="paramTwo">Color</label>
             <input
               type="text"
               name="paramTwo"
@@ -36,7 +38,7 @@ export default (st) => `
             />
           </div>
           <div>
-            <label for="paramThree">Size</label><br>
+            <label for="paramThree">Size</label>
             <input
               type="text"
               name="paramThree"

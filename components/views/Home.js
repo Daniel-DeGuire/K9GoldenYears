@@ -22,8 +22,8 @@ export default (st) => `
           3. There are over 75 million pet dogs in the U.S.—more than in any other country.
           </p><br><br><br>
           <h2>Thank you, for visiting our site!</h2>
-          <p><table id="counter">
-          <tr><th>Visitor</th><th>number:
+          <p>
+          Visitor number
           ${st.visits}
           </table></p>
 
