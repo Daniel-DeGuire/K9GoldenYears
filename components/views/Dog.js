@@ -13,7 +13,7 @@ export default (st) => `
           <h2>LostBoard:</h2><br>
           <p>Reported Lost Senior Dogs</p><br><br>
           <table id="lostDog">
-          <tr><th>Breed</th><th>Color</th><th>Size</th><th>Characteristcs</th></tr>
+          <tr><th>Breed</th><th>Name</th><th>Size</th><th>Characteristics</th></tr>
 ${st.dogs
   .map((dog) => {
     return `<tr><td>${dog.paramOne}</td><td>${dog.paramTwo}</td><td>${
@@ -24,4 +24,3 @@ ${st.dogs
 </table>
 </section>
 `;
-// TO DO: Add API Functionality

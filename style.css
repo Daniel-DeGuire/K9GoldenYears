@@ -1,20 +1,25 @@
+/* Main container elements */
+
 header {
   text-align: center;
   min-width: 400px;
 }
 
-body {
-  margin: 0;
-  padding: 0;
-  text-align: left;
-  font: Arial, Helvetica, sans-serif;
-  font-size: 13px;
-  background: #afdcc6;
-}
 * {
   margin: 0 auto 0 auto;
   text-align: left;
 }
+
+p {
+  text-align: center;
+  font-size: 20px;
+}
+html,
+body {
+  text-align: center;
+}
+
+/* Nav elements */
 
 a {
   font-weight: bold;
@@ -25,6 +30,16 @@ a:hover {
   border-bottom: dotted 1px #659dbd;
 }
 
+/* Body elements */
+
+body {
+  margin: 0;
+  padding: 0;
+  text-align: left;
+  font: Arial, Helvetica, sans-serif;
+  font-size: 13px;
+  background: #afdcc6;
+}
 #container {
   display: block;
   height: auto;
@@ -38,45 +53,6 @@ a:hover {
   padding-left: 17px;
   padding-right: 17px;
   overflow: hidden;
-}
-
-.dogs {
-  text-align: center;
-}
-#dog1 {
-  width: 30%;
-  height: 53%;
-}
-#dog2 {
-  width: 34%;
-  height: 50%;
-}
-#dog3 {
-  width: 30%;
-  height: 50%;
-}
-#lostDog {
-  font-family: Arial, Helvetica, sans-serif;
-  font-size: 1.2em;
-  height: auto;
-  width: 70px;
-  margin: auto;
-  text-align: center;
-}
-
-#lostDog tbody {
-  width: 100%;
-}
-
-#lostDog th {
-  text-align: left;
-}
-#lostDog td,th {
-  width: 100%;
-  padding: .2em 1em;
-}
-.off {
-  color: #0a2645;
 }
 
 .welcometext {
@@ -111,6 +87,51 @@ a:hover {
   height: 880px;
 }
 
+/* Dog pictures on About.js */
+
+.dogs {
+  text-align: center;
+}
+#dog1 {
+  width: 30%;
+  height: 53%;
+}
+#dog2 {
+  width: 34%;
+  height: 50%;
+}
+#dog3 {
+  width: 30%;
+  height: 50%;
+
+/* Lost dog form on Submit.js */
+}
+#lostDog {
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 1.2em;
+  height: auto;
+  width: 70px;
+  margin: auto;
+  text-align: center;
+}
+
+#lostDog tbody {
+  width: 100%;
+}
+
+#lostDog th {
+  text-align: left;
+}
+#lostDog td,th {
+  width: 100%;
+  padding: .2em 1em;
+}
+.off {
+  color: #0a2645;
+}
+
+/* Contact.js contact form */
+
 .formtext h3 {
   color: #afdcc6;
   font-family: "Slabo 27px", serif;
@@ -144,6 +165,13 @@ table input[type="text"] {
 .entry {
   text-align: center;
 }
+
+/* Dog image on Home.js */
+
+
+
+/* Footer element */
+
 footer {
   font-size: 12px;
   margin-top: 30px;
@@ -159,15 +187,7 @@ footer {
   text-decoration: none;
 }
 
-html,
-body {
-  text-align: center;
-}
-
-p {
-  text-align: center;
-  font-size: 20px;
-}
+/* Google maps on Contact.js */
 
 .maps {
   overflow: hidden;

@@ -19,7 +19,7 @@ export default () => html`
           <div>
             <label for="paramOne">Select a Breed</label>
             <select id="paramOne" name="paramOne">
-              <option value="huskyDog">Husky</option>
+              <option value="Husky">Husky</option>
               <option value="germanShepard">German Shepard</option>
               <option value="pitBull">Pit Bull</option>
               <option value="labradorRetriever">Labrador Retriever</option>
@@ -28,12 +28,12 @@ export default () => html`
             </select>
           </div>
           <div>
-            <label for="paramTwo">Color</label>
+            <label for="paramTwo">Name</label>
             <input
               type="text"
               name="paramTwo"
               id="paramTwo"
-              placeholder="Color"
+              placeholder="Name"
               required
             />
           </div>
