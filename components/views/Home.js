@@ -1,4 +1,7 @@
-export default (st) => `
+import html from "html-literal";
+import dogsImage from "/assets/dog2.jpg";
+
+export default (st) => html`
 <section id="home">
 <div id="container">
 <div id="header">
@@ -12,8 +15,9 @@ export default (st) => `
           <div class="contenttext">
           <h2>Mission:</h2>
           <P> Providing educational & community resources in adopting a senior dogs. Senior dogs have a much lower adoption rate versus younger dogs & puppies. We strive to change this one dog & heart at a time.  <br>
-          <br>
-          <br>
+          <br><img src="${dogsImage}"/>
+          <br><b>Resident dogs Indie (left) and Scarlett (right)</b></P>
+          <br><br>
           <h2>Random Dog Facts</h2>
           <P>Interesting dog facts.</P>
           <br>
@@ -26,9 +30,8 @@ export default (st) => `
           Visitor number
           ${st.visits}
           </table></p>
-
-          </div>
-      </div>
+        </div><BR>
+        </div>
 </table>
 </section>
 `;
