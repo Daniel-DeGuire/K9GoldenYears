@@ -81,7 +81,7 @@ body {
 .contenttext {
   background-color: #afdcc6;
   font-family: "Slabo 27px", serif;
-  padding-top: 30px;
+  padding-top: 23px;
   padding-left: 10px;
   padding-right: 10px;
   height: 880px;
@@ -238,12 +238,16 @@ footer {
     list-style-type: none;
   }
 }
+#mainlogo {
+  width: 50%;
+  height: 50%;
+}
 
 /***** For Bigger screens *****/
 
 @media (min-width: 550px) {
   header {
-    height: 10vh;
+    height: 19vh;
   }
   nav {
     background-color: #8d8741;
@@ -265,4 +269,11 @@ footer {
   nav > .fa-bars {
     display: none;
   }
+#mainlogo {
+  width: 37%;
+  min-width: 30%;
+  height: 37%;
+  min-height: 30%;
 }
+}
+
