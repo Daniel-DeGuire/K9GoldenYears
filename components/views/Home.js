@@ -29,7 +29,7 @@ export default (st) => html`
           <p>
           Visitor number
           ${st.visits}
-          </table></p>
+          </table></p><br>
         </div><BR>
         </div>
 </table>

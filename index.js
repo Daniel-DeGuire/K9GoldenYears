@@ -2,6 +2,7 @@
 import { Header, Nav, Main, Footer } from "./components";
 import * as state from "./store";
 import axios from "axios";
+import { Client } from "@petfinder/petfinder-js";
 import Navigo from "navigo";
 import { capitalize } from "lodash";
 import dotenv from "dotenv";
@@ -10,6 +11,13 @@ dotenv.config();
 //  Declaring Router
 
 const router = new Navigo(window.location.origin);
+
+// Declaring PetFinder variables
+
+const client = new Client({
+  apiKey: `${process.env.PET_FINDER_API}`,
+  secret: `${process.env.PET_FINDER_SECRET}`,
+});
 
 // Render Function
 function render(st = state.Home) {
@@ -92,6 +100,18 @@ router.hooks({
           console.log("It puked", error);
         });
     }
+    if (page === "Home") {
+      axios;
+      client.animal
+        .search({ type: "dog" })
+        .then(function(response) {
+          state.Home.animals = response.data.animals;
+          console.log(response.data.animals);
+        })
+        .catch((error) => {
+          console.log("It puked", error);
+        });
+    }
     if (page === "About") {
       axios
         .get(`${process.env.DOG_BREEDS_API_URL}`)
@@ -126,6 +146,18 @@ router.hooks({
         .get(`${process.env.DOG_REQUEST_API_URL}`)
         .then((response) => {
           state.Dog.dogs = response.data;
+          done();
+        })
+        .catch((error) => {
+          console.log("It puked", error);
+        });
+    }
+    if (page === "Daily") {
+      axios
+        .get(`${process.env.THE_DOG_API_RANDOM}`)
+        .then((response) => {
+          state.Daily.daily = response.data.url;
+          console.log(response.data.url);
           done();
         })
         .catch((error) => {
