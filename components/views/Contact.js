@@ -11,7 +11,7 @@ export default () => `
     <h2>Give us a holler or a bark!</h2>
     <p> Fill out the following form.</p><br>
     <div class='inputWrapper'>
-    <form id = "
+    <form
 action="https://formspree.io/f/moqyrkko"
 method="POST"
 >	<div id="entry">
