@@ -217,7 +217,8 @@ footer {
     flex-direction: column;
     min-width: 400px;
     font-family: "Slabo 15px", serif;
-    background-color: #8d8741;
+    background-color:     background-color: #8d8741;
+    ;
   }
   header {
     height: 11vh;
